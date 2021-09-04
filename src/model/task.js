@@ -1,13 +1,14 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const TaskSchema = Schema({
-  title: String,
-  description: String,
-  status: {
-    type: Boolean,
-    default: false
-  }
+  cedula: Number,
+  nombre: String,
+  correo: String,
+  telefono: Number,
+  direccion: String,
+  ciudad: String,
+  descripcion: String,
 });
 
-module.exports = mongoose.model('tasks', TaskSchema);
+module.exports = mongoose.model("clientes", TaskSchema);

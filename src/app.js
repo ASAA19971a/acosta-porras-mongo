@@ -7,7 +7,7 @@ const app = express();
 
 // connection to db
 mongoose
-  .connect("mongodb+srv://abel:abel12345678@cluster0.r5nam.mongodb.net/tareas")
+  .connect("mongodb://localhost/crud1")
   .then((db) => console.log("db connected"))
   .catch((err) => console.log(err));
 
