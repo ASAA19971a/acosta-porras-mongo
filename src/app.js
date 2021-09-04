@@ -7,7 +7,7 @@ const app = express();
 
 // connection to db
 mongoose
-  .connect("mongodb+srv://abel:12345678@cluster0.y5itp.mongodb.net/foreria")
+  .connect("mongodb+srv://abel:abel12345678@cluster0.y5itp.mongodb.net/foreria")
   .then((db) => console.log("db connected"))
   .catch((err) => console.log(err));
 
